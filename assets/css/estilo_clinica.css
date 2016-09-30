@@ -494,7 +494,7 @@ body.loading .modal {
 }
 .fondo_formularios input {
 	width:70%;
-    height: 34px;
+    /*height: 34px;*/
     border-radius: 5px;
     margin-bottom: 4px;
     border-width: 1px;

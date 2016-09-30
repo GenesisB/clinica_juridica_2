@@ -189,8 +189,8 @@
 		}
 
 		public function actualiza_sede_actual($sede_seleccionada){
-			$user=$_SESSION['login_user'];
-			$query = $this->db->query("update usuarios set sede = '$sede_seleccionada' where rut = '$user'");
+			$rut_user=$_SESSION['rut_user'];
+			$query = $this->db->query("update usuarios set sede = '$sede_seleccionada' where rut = '$rut_user'");
 		}
 	}
 ?>

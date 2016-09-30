@@ -129,7 +129,7 @@ class Ingreso extends CI_Controller {
 	public function ingresar_orientacion(){
 
 
-		$current_session = $_SESSION['login_user'];
+		$current_session = $_SESSION['rut_user'];
 		$this->load->model('modelo_ingresos');
 
 
@@ -424,8 +424,8 @@ class Ingreso extends CI_Controller {
 			$crud->set_subject('usuarios');
 			$crud->where('tipo_usuario','F');
 			$crud->required_fields('rut', 'dv', 'pwd', 'nombre');
-			$crud->fields('rut','dv','nombre', 'pwd','telefono', 'email', 'tipo_usuario');
-			$crud->columns('rut','dv','nombre', 'telefono', 'email');
+			$crud->fields('rut','dv','nombre_usuario','nombre', 'pwd','telefono', 'email', 'tipo_usuario');
+			$crud->columns('rut','dv','nombre_usuario','nombre', 'telefono', 'email');
 
 			$crud->callback_before_insert(array($this,'callback_admin'));
 			$crud->callback_after_insert(array($this,'after_admin'));
@@ -464,8 +464,8 @@ class Ingreso extends CI_Controller {
 			$crud->set_subject('usuarios');
 			$crud->where('tipo_usuario','P');
 			$crud->required_fields('rut', 'dv', 'pwd', 'nombre');
-			$crud->fields('rut','dv','nombre', 'pwd','telefono', 'email', 'tipo_usuario');
-			$crud->columns('rut','dv','nombre', 'telefono', 'email');
+			$crud->fields('rut','dv','nombre_usuario', 'nombre', 'pwd','telefono', 'email', 'tipo_usuario');
+			$crud->columns('rut','dv','nombre_usuario', 'nombre', 'telefono', 'email');
 
 			$crud->callback_before_insert(array($this,'callback_profesores'));
 			$crud->callback_after_insert(array($this,'after_profesores'));
@@ -503,8 +503,8 @@ class Ingreso extends CI_Controller {
 			$crud->set_subject('usuarios');
 			$crud->where('tipo_usuario','A');
 			$crud->required_fields('rut', 'dv', 'pwd', 'nombre');
-			$crud->fields('rut','dv','nombre', 'pwd','telefono', 'email', 'tipo_usuario');
-			$crud->columns('rut','dv','nombre', 'telefono', 'email');
+			$crud->fields('rut','dv','nombre_usuario','nombre', 'pwd','telefono', 'email', 'tipo_usuario');
+			$crud->columns('rut','dv','nombre_usuario','nombre', 'telefono', 'email');
 
 			$crud->callback_before_insert(array($this,'callback_alumnos'));
 			$crud->callback_after_insert(array($this,'after_alumnos'));

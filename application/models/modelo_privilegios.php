@@ -5,8 +5,11 @@
 	class modelo_privilegios extends CI_Model {
 
 		public function login($usuario, $clave) {
-			$query = $this->db->query("SELECT pwd FROM usuarios WHERE rut='$usuario'");
-
+			if (is_numeric($usuario)) {
+				$query = $this->db->query("SELECT pwd, rut, nombre, tipo_usuario FROM usuarios WHERE rut='$usuario'");
+			} else {
+				$query = $this->db->query("SELECT pwd, rut, nombre, tipo_usuario FROM usuarios WHERE nombre_usuario='$usuario'");
+			}
 
 			$primera_fila = $query->row();
 			$clave_hash = $primera_fila->pwd;
@@ -24,6 +27,9 @@
 				    }
 
 					 $_SESSION['login_user']=$usuario;
+					 $_SESSION['rut_user']=$primera_fila->rut;
+					 $_SESSION['nombre_completo_user']=$primera_fila->nombre;
+					 $_SESSION['tipo_usuario_user']=$primera_fila->tipo_usuario;
 					 return "OK";
 				}
 				else {
@@ -33,6 +39,9 @@
 			// Para claves No Encriptadas.
 			elseif ($clave === $clave_hash) {
 				$_SESSION['login_user']=$usuario;
+				$_SESSION['rut_user']=$primera_fila->rut;
+				$_SESSION['nombre_completo_user']=$primera_fila->nombre;
+				$_SESSION['tipo_usuario_user']=$primera_fila->tipo_usuario;
 			 	return "OK";
 			}
 			else {
@@ -41,28 +50,29 @@
 		}
 
 		public function traer_privilegios(){
-			$user=$_SESSION['login_user'];
-			$query = $this->db->query("SELECT tipo_privilegio, privilegio FROM privilegios WHERE rut = '$user';");
+			$rut_user=$_SESSION['rut_user'];
+			$query = $this->db->query("SELECT tipo_privilegio, privilegio FROM privilegios WHERE rut = '$rut_user';");
 			return $query;
 		}
 
 		public function nombre_usuario(){
-			$user=$_SESSION['login_user'];
-			$query = $this->db->query("SELECT nombre FROM usuarios WHERE rut = '$user';");
-
-			if ($query->num_rows() > 0)
-				{
-					foreach ($query->result() as $row)
-					{
-						$nombre = $row->nombre;
-					}
-				}
-			return $nombre;
+			// $rut_user=$_SESSION['rut_user'];
+			// $query = $this->db->query("SELECT nombre FROM usuarios WHERE rut = '$rut_user';");
+			//
+			// if ($query->num_rows() > 0)
+			// 	{
+			// 		foreach ($query->result() as $row)
+			// 		{
+			// 			$nombre = $row->nombre;
+			// 		}
+			// 	}
+			// return $nombre;
+			return $_SESSION['nombre_completo_user'];
 		}
 
 		public function sede_usuario(){
-			$user=$_SESSION['login_user'];
-			$query = $this->db->query("select nombre_sede from sedes where id_sede = (select sede from usuarios where rut = '$user');");
+			$rut_user=$_SESSION['rut_user'];
+			$query = $this->db->query("select nombre_sede from sedes where id_sede = (select sede from usuarios where rut = '$rut_user');");
 
 			if ($query->num_rows() > 0)
 				{
@@ -75,22 +85,23 @@
 		}
 
 		public function tipo_usuario(){
-			$user=$_SESSION['login_user'];
-			$query = $this->db->query("select tipo_usuario FROM usuarios WHERE rut = '$user';");
-			if ($query->num_rows() > 0)
-				{
-					foreach ($query->result() as $row)
-					{
-						$tipo = $row->tipo_usuario;
-					}
-				}
-			return $tipo;
+			// $rut_user=$_SESSION['rut_user'];
+			// $query = $this->db->query("select tipo_usuario FROM usuarios WHERE rut = '$rut_user';");
+			// if ($query->num_rows() > 0)
+			// 	{
+			// 		foreach ($query->result() as $row)
+			// 		{
+			// 			$tipo = $row->tipo_usuario;
+			// 		}
+			// 	}
+			// return $tipo;
+			return $_SESSION['tipo_usuario_user'];
 		}
 
 
 		public function cantidad_sedes(){
-			$user=$_SESSION['login_user'];
-			$query = $this->db->query("select COUNT(rut) as cantidad FROM usuario_sede WHERE rut = '$user';");
+			$rut_user=$_SESSION['rut_user'];
+			$query = $this->db->query("select COUNT(rut) as cantidad FROM usuario_sede WHERE rut = '$rut_user';");
 			if ($query->num_rows() > 0)
 				{
 					foreach ($query->result() as $row)

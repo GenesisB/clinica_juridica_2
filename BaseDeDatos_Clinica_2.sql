@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `asignacion_agenda` (
   `sede` varchar(45) NOT NULL,
   PRIMARY KEY (`id_asignacion`),
   UNIQUE KEY `id_dia_abogado_UNIQUE` (`id_asignacion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=144 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=144 ;
 
 
 -- --------------------------------------------------------
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `asignacion_agenda_historico` (
   `motivo` varchar(255) NOT NULL,
   `quien_elimina` varchar(255) NOT NULL,
   PRIMARY KEY (`id_asignacion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=142 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=142 ;
 
 
 -- --------------------------------------------------------
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `asuntos` (
   `rut_asociado` varchar(45) NOT NULL,
   `sede` varchar(45) NOT NULL,
   PRIMARY KEY (`idasuntos`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=37 ;
 
 
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `audiencias` (
   `hora` time NOT NULL,
   `sede` varchar(45) NOT NULL,
   PRIMARY KEY (`id_audiencia`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
 
 
 -- --------------------------------------------------------
@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS `bloques` (
   `termino` varchar(45) NOT NULL,
   `sede` varchar(45) DEFAULT NULL,
   `oficina` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `bloques`
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `causal_termino` (
   `id_causal_termino` int(11) NOT NULL AUTO_INCREMENT,
   `nom_causal` varchar(80) NOT NULL,
   PRIMARY KEY (`id_causal_termino`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Volcado de datos para la tabla `causal_termino`
@@ -194,7 +194,7 @@ CREATE TABLE IF NOT EXISTS `causas` (
   `DV_CLIENTE` varchar(1) DEFAULT NULL,
   `DV_ABOGADO` varchar(1) DEFAULT NULL,
   `SEDE` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -210,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `domicilio` varchar(255) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`rut_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `conf_agenda` (
   `sede` varchar(45) DEFAULT NULL,
   `oficina` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_conf_agenda`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=52 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
 
 -- --------------------------------------------------------
 
@@ -241,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `materia` (
   `id_materia` int(11) NOT NULL AUTO_INCREMENT,
   `nom_materia` varchar(80) NOT NULL,
   PRIMARY KEY (`id_materia`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
 
 --
 -- Volcado de datos para la tabla `materia`
@@ -299,7 +299,7 @@ CREATE TABLE IF NOT EXISTS `orientacion` (
   `sede` varchar(45) NOT NULL,
   PRIMARY KEY (`id_orientacion`),
   UNIQUE KEY `id_orientacion_UNIQUE` (`id_orientacion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 
 -- --------------------------------------------------------
@@ -315,7 +315,7 @@ CREATE TABLE IF NOT EXISTS `privilegios` (
   `tipo_privilegio` varchar(255) NOT NULL,
   `privilegio` tinyint(1) NOT NULL,
   PRIMARY KEY (`id_privilegio`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=127 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=127 ;
 
 --
 -- Volcado de datos para la tabla `privilegios`
@@ -354,7 +354,7 @@ CREATE TABLE IF NOT EXISTS `sedes` (
   `id_sede` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_sede` varchar(255) NOT NULL,
   PRIMARY KEY (`id_sede`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `sedes`
@@ -381,7 +381,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `tipo_usuario` varchar(45) NOT NULL,
   `sede` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`rut`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -403,7 +403,7 @@ CREATE TABLE IF NOT EXISTS `usuario_sede` (
   `rut` varchar(255) NOT NULL,
   `id_sede` varchar(255) NOT NULL,
   PRIMARY KEY (`id_usuario_sede`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=108 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=108 ;
 
 --
 -- Volcado de datos para la tabla `usuario_sede`

@@ -103,16 +103,16 @@ ajaxStop: function() { $body.removeClass("loading"); }
 			<img src="<?= base_url(); ?>assets/images/logo_unab_derecho.png" style="width: 200px; height: auto;">
 		</div>
 		<div class="foto_header">
-			<img style="width:70px; height:70px; border-radius: 50%;" src="../../assets/usuarios/<?php echo $_SESSION['login_user'];?>.jpg" onError="this.src='../../assets/usuarios/sin_foto.png';" >
+			<img style="width:70px; height:70px; border-radius: 50%;" src="../../assets/usuarios/<?php echo $_SESSION['rut_user'];?>.jpg" onError="this.src='../../assets/usuarios/sin_foto.png';" >
 		</div>
 		<div class="usuario_header">
 		<!-- Usuario Conectado -->
 
-				<?php echo ucwords(strtolower($nombre."<br><div id='sede_act'>".$sede."</div>"));  ?> <input type="text" id="user_logeado" value="<?php echo $_SESSION['login_user'];?>" style="display:none;">
+				<?php echo ucwords(strtolower($nombre."<br><div id='sede_act'>".$sede."</div>"));  ?> <input type="text" id="user_logeado" value="<?php echo $_SESSION['rut_user'];?>" style="display:none;">
 
 				<?php
 					if($cantidad_sedes>1){
-						echo "<img onClick=\"cambiar_sede('".$_SESSION['login_user']."');\" src=\"".base_url()."assets/images/cambiar_sede.png\" alt=\"Cambiar de Sede\" style=\"cursor:pointer; width: 40px; height: 40px; margin-left:35%;\">";
+						echo "<img onClick=\"cambiar_sede('".$_SESSION['rut_user']."');\" src=\"".base_url()."assets/images/cambiar_sede.png\" alt=\"Cambiar de Sede\" style=\"cursor:pointer; width: 40px; height: 40px; margin-left:35%;\">";
 					}
 				?>
 
