@@ -1,0 +1,12 @@
+<?php 
+
+	class busqueda_modelo extends CI_Model {
+
+		public function test_select(){
+			$query = $this->db->get('causas');
+		
+		}
+		
+		
+		
+?>

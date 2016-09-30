@@ -1,0 +1,377 @@
+<div style="margin:auto; width:60%;  padding:10px">
+  <h2 style="text-align:center">Ingreso Causa Clinica Juridica UNAB</h2>
+  
+  <div style="margin:auto; padding:10px;  width:60%;">
+	<table style="margin:auto;">
+    <tr>
+      <td class="right">
+        Fecha
+      </td>
+      <td>
+        <input id="fecha_orientacion" name="fecha_orientacion" type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td class="right">
+        Abogado
+      </td>
+      <td>
+        <input id="nombre_usuario" name="nombre_usuario" type="text"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="right">
+        Alumno
+      </td>
+      <td>
+        <input id="rut" name="rut" type="text"/>
+      </td>
+
+    </tr>
+    <tr>
+      <td class="right">
+        Nombre Usuario (a)
+      </td>
+      <td>
+        <input id="fono_casa" name="fono_casa" type="text"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="right">
+        RUT
+      </td>
+      <td>
+        <input id="celular" name="celular" type="text"/>
+      </td>
+
+    </tr>
+    <tr>
+      <td class="right">
+        Edad
+      </td>
+      <td>
+        <input id="correo_electronico" name="correo_electronico" type="text"/>
+      </td>
+
+    </tr>
+    <tr>
+      <td class="right">
+        Domicilio
+      </td>
+      <td>
+        <input id="materia_consultada" name="materia_consultada" type="text"/>
+      </td>
+
+    </tr>
+    <tr>
+      <td class="right">
+        Fono
+      </td>
+      <td>
+        <input id="resena" name="resena" type="text"/>
+      </td>
+    </tr>
+	<tr>
+      <td class="right">
+        Email
+      </td>
+      <td>
+        <input id="email" name="email" type="text"/>
+      </td>
+    </tr>
+  </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.25px  solid black; width:60%">
+    <h3 style="margin-top:0px;">Estado Civil</h3>
+    <table>
+      <tr>
+        <td>Casado</td>
+        <td>
+          <input id="rCasado" name="estadoCivil" type="radio"></input>
+        </td>
+        <td>Soltero</td>
+        <td>
+          <input id="rSoltero" name="estadoCivil" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Viudo</td>
+        <td>
+          <input id="rViudo" name="estadoCivil" type="radio"></input>
+        </td>
+        <td>AUC</td>
+        <td>
+          <input id="rAUC" name="estadoCivil" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Divoriado</td>
+        <td>
+          <input id="rDivorciado" name="estadoCivil" type="radio"></input>
+        </td>
+        <td>Conviviente</td>
+        <td>
+          <input id="rConviviente" name="estadoCivil" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br/>
+          Separado de hecho:
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Si
+          <input id="rSi" name="separadoSiNo" type="radio"></input>
+        </td>
+        <td>
+          No
+          <input id="rNo" name="separadoSiNo" type="radio"></input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+    <h3 style="margin-top:0px;">Situacion Laboral</h3>
+    <table>
+      <tr>
+        <td colspan="3">Independiente: 
+          <input id="rIndependiente" name="rSituacionLaboral" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Estable</td>
+        <td>
+          <input id="rEstable" name="rIndependiente" type="radio"></input>
+        </td>
+        <td>Eventual</td>
+        <td>
+          <input id="rEventual" name="rIndependiente" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Jubilado</td>
+        <td>
+          <input id="rJubilado" name="rIndependiente" type="radio"></input>
+        </td>
+        <td>Estudiante</td>
+        <td>
+          <input id="rEstudiante" name="rIndependiente" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Dependiente:
+          <input id="rIndependiente" name="rSituacionLaboral" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Con Contrato</td>
+        <td>
+          <input id="rConContrato" name="rDependiente" type="radio"></input>
+        </td>
+        <td>Sin Contrato</td>
+        <td>
+          <input id="rSinContrato" name="rDependiente" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br/>
+          Actividad <input id="txtActividad" name="txtActividad" type="text"></input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Tipo de Prevision</h3>
+    <table>
+      <tr>
+        <td>AFP 
+          <input id="rAFP" name="prevision" type="radio"></input>
+        </td>
+        <td>IPS 
+          <input id="rIPS" name="prevision" type="radio"></input>
+        </td>
+        <td>SP 
+          <input id="rSP" name="prevision" type="radio"></input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Sistema de Salud</h3>
+    <table>
+      <tr>
+        <td>ISAPRE 
+          <input id="rIsapre" name="salud" type="radio"></input>
+        </td>
+        <td>FONASA 
+          <input id="rFonasa" name="salud" type="radio"></input>
+        </td>
+      </tr>
+	  <tr>
+        <td>DIPRECA 
+          <input id="rDipreca" name="salud" type="radio"></input>
+        </td>
+        <td>CAPREDENA 
+          <input id="rCapredena" name="salud" type="radio"></input>
+        </td>
+		</tr>
+		<tr>
+        <td>OTRA 
+          <input id="rSaludOtra" name="salud" type="text"></input>
+        </td>
+	  </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Tipo de Prevision</h3>
+    <table>
+      <tr>
+        <td>AFP 
+          <input id="rAFP" name="prevision" type="radio"></input>
+        </td>
+        <td>IPS 
+          <input id="rIPS" name="prevision" type="radio"></input>
+        </td>
+        <td>SP 
+          <input id="rSP" name="prevision" type="radio"></input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Escolaridad</h3>
+    <table>
+      <tr>
+        <td>Analfabeto 
+          <input id="rIletrado" name="escolaridad" type="radio"></input>
+        </td>
+        <td>Básica 
+          <input id="rBasica" name="escolaridad" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Media 
+          <input id="rMedia" name="escolaridad" type="radio"></input>
+        </td>
+        <td>Técnica 
+          <input id="rTecina" name="escolaridad" type="radio"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Superior 
+          <input id="rSuperior" name="escolaridad" type="radio"></input>
+        </td>
+        <td>Cursando 
+          <input id="rCursando" name="escolaridad" type="radio"></input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Grupo Familiar</h3>
+    <table>
+      <tr>
+		<td> Total Personas <input id="txtTotPersonas" name="txtTotPersonas" type="text" />
+      </tr>
+	  <tr>
+        <td>Adultos</td> 
+		<td>
+          <input id="txtAdultos" name="txtAdultos" type="text"></input>
+        </td>
+	</tr>
+	<tr>
+        <td>Menores </td>
+		<td>
+          <input id="txtMenores" name="txtMenores" type="text"></input>
+        </td>
+	  </tr>
+	  <tr>
+		<td> Discapacitados </td>
+	</tr>
+	<tr>
+		<td> SI <input id="rFamSi" name="familia" type="radio" /> </td>
+		<td> NO <input id="rFamNo" name="familia" type="radio" /> </td>
+	  </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Situacion Habitacional</h3>
+    <table>
+	<tr>
+        <td>Propia 
+		</td>
+		<td>
+          <input id="rPropia" name="habitacion" type="radio"></input>
+        </td>
+        <td>Arrendada 
+		</td>
+		<td>
+          <input id="rArrendada" name="habitacion" type="radio"></input>
+        </td>
+      </tr>
+	<tr>
+        <td>Allegada 
+		</td>
+		<td>
+          <input id="rAllegada" name="habitacion" type="radio"></input>
+        </td>
+        <td>Prestada 
+		</td>
+		<td>
+          <input id="rPrestada" name="habitacion" type="radio"></input>
+        </td>
+      </tr>
+	  <tr>
+		<td>Valor dividendo o arriendo </td>
+		<td>
+			$ <input id="txtDividento" name="txtDividento" type="text" style="width:90%" />
+			</td>
+	  </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Ingresos</h3>
+    <table>
+      <tr>
+		<td>
+			$ <input id="txtIng1" name="txtIng1" type="text" />
+		</td>
+      </tr>
+      <tr>
+		<td>
+			$ <input id="txtIng2" name="txtIng2" type="text" />
+		</td>
+      </tr>
+      <tr>
+		<td>
+			$ <input id="txtIng3" name="txtIng3" type="text"/>
+		</td>
+      </tr>
+      <tr>
+		<td>
+			<b>Total</b> $ <input id="txtIngresoTotal" name="txtIngresoTotal" type="text" />
+		</td>
+      </tr>
+    </table>
+  </div>
+  <div style="margin:auto; padding:10px; border: 0.2px solid black; width:60%">
+  <h3 style="margin-top:0px;">Beneficios Estatales	</h3>
+    <table>
+      <tr>
+		<td> SI <input id="rBenSi" name="beneficio" type="radio" /> </td>
+		<td> NO <input id="rBenNo" name="beneficio" type="radio" /> </td>
+      </tr>
+	  <tr>
+		<td>
+			<b>Indicar cual</b>
+		</td>
+	  </tr>
+    </table>
+  </div>
+
+</div>

@@ -1,0 +1,546 @@
+﻿.ui-dialog {
+position:fixed;
+top:50px !important;
+}
+
+.ui-dialog{
+	width: 97% !important;
+	height: 70% !important;
+    left: 1% !important;
+}
+.ui-dialog-content {
+	height: 84% !important;
+
+}
+
+.titulo_div {
+	margin-bottom: 0px;
+	text-align: center;
+    position: relative;
+    top: -23px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.dataTables_paginate {
+ margin-top: 1%;
+}
+
+.dataTables_info{
+margin-top: 1%;
+}
+
+.dataTables_length{
+	margin-bottom: 1%;
+}
+.sorting_asc{
+	font-size: 11pt;
+}
+
+.sorting_desc{
+	font-size: 11pt;|
+}
+
+.sorting  {
+	font-size: 11pt;
+}
+
+
+
+body {
+	font-family: sans-serif;
+    margin: 8px !important;
+    background-color: #fff;
+	color:#333333;
+
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;;
+
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+.titulo_fieldset{
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	text-align:center;
+}
+
+.centrar{
+	margin: 0 auto;
+
+}
+
+.boton{
+	background-image: url("../images/boton_mac.png");
+    background-repeat: repeat-x;
+	border-radius:15px;
+	font-size: 14PT;
+	font-weight:lighter;
+	width: 150px;
+    background-size: 100% 100%;
+    height: 30px;
+
+}
+.boton:hover{
+	background-image: url("../images/boton_mac_hover.png");
+    background-repeat: repeat-x;
+	border-radius:15px;
+	font-size: 15PT;
+	font-weight:lighter;
+}
+
+.boton2{
+    	background-image: url("../images/boton_mac.png");
+   	 background-repeat: repeat-x;
+    	border-radius: 15px;
+    	font-size: 10PT;
+    	font-weight: lighter;
+    	width: 120px;
+    	background-size: 100% 100%;
+   	 height: 20px;
+}
+.boton2:hover{
+	background-image: url("../images/boton_mac_hover.png");
+   	background-repeat: repeat-x;
+	border-radius:15px;
+	font-size: 10PT;
+	font-weight:lighter;
+}
+
+
+
+
+
+.estilo_form{
+	position: absolute;
+    border: 1px solid;
+    padding: 20px;
+    margin-top: 50px;
+    left: 35%;
+}
+fieldset{
+	left: 35%;
+    text-align: left;
+    top: 208px;
+	width: 540px;
+    position: absolute;
+    background-color: #f7f7f7;
+    z-index: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+	border-radius:15px;
+	box-shadow: 5px 5px 7px 7px #bbbbbb;
+	border-bottom:none;
+	border-left:none;
+	border-top:none;
+	border-right:none;
+
+}
+
+legend{
+	text-align:center;
+	font-size:12pt;
+}
+
+.boton_derecha{
+	float:right;
+	margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.text_area{
+	border: 1px solid #cfd9db;
+    background-color: #ffffff;
+    border-radius: .25em;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+	margin-bottom: 5px;
+	height:23px;
+}
+
+.text_form{
+	text-align:left;
+	width:150px;
+	float:left;
+	margin-left: 40px;
+}
+
+.header_boveda{
+	background-color: #f2f2f2;
+	box-shadow: 5px 5px #dddddd;
+	height:108px;
+	margin-top:-22px;
+
+}
+
+.logo_izquierdo_header {
+    padding-top: 15px;
+    padding-left: 5px;
+    width: 220px;
+    height: 56px;
+    float: left;
+}
+.header_content {
+    margin: 0 auto;
+    width: 100%;
+	height:108px;
+}
+
+
+.usuario_header {
+    float: left;
+	padding-top: 18px;
+	text-transform: capitalize;
+}
+
+
+
+
+.log_off {
+    margin-top: 10px;
+    margin-right: 10px;
+    bottom: 0;
+    float: right;
+}
+.logo_derecho_header {
+    padding-top: 15px;
+    padding-left: 5px;
+    width: 220px;
+    height: 56px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+.logo_derecha {
+    float: right;
+    padding-top: 5px;
+    width: 108px;
+    height: 90px;
+}
+.welcome {
+    float: left;
+    padding-bottom: 10px;
+}
+.foto_header {
+    margin-left: 30%;
+    padding-top: 17px;
+    font-size: 19pt;
+    text-align: center;
+    height: 65px;
+    width: 110px;
+    float: left;
+}
+.fondo_bu {
+    width: 100%;
+}
+
+
+
+.content{
+	width:90%;
+	margin: 0 auto;
+
+}
+
+.CSSTableGenerator {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:270px;
+	border:1px solid #000000;
+	-moz-border-radius-bottomleft:14px;
+	-webkit-border-bottom-left-radius:14px;
+	border-bottom-left-radius:14px;
+	-moz-border-radius-bottomright:14px;
+	-webkit-border-bottom-right-radius:14px;
+	border-bottom-right-radius:14px;
+	-moz-border-radius-topright:14px;
+	-webkit-border-top-right-radius:14px;
+	border-top-right-radius:14px;
+	-moz-border-radius-topleft:14px;
+	-webkit-border-top-left-radius:14px;
+	border-top-left-radius:14px;
+}.CSSTableGenerator table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:14px;
+	-webkit-border-bottom-right-radius:14px;
+	border-bottom-right-radius:14px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:14px;
+	-webkit-border-top-left-radius:14px;
+	border-top-left-radius:14px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:14px;
+	-webkit-border-top-right-radius:14px;
+	border-top-right-radius:14px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:14px;
+	-webkit-border-bottom-left-radius:14px;
+	border-bottom-left-radius:14px;
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#d8d5d2; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
+	vertical-align:middle;
+	text-align:center;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:10pt;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+	background:-o-linear-gradient(bottom, #726e69 5%, #bab6b2 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #726e69), color-stop(1, #bab6b2) );
+	background:-moz-linear-gradient( center top, #726e69 5%, #bab6b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#726e69", endColorstr="#bab6b2");
+	background: -o-linear-gradient(top,#726e69,bab6b2);
+	background-color:#ff7f00;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14pt;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #726e69 5%, #bab6b2 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #726e69), color-stop(1, #bab6b2) );
+	background:-moz-linear-gradient( center top, #726e69 5%, #bab6b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#726e69", endColorstr="#bab6b2");
+	background: -o-linear-gradient(top,#726e69,bab6b2);
+	background-color:#726e69;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+tr{
+	text-align: left;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .7 )
+                url('../images/ajax-loader.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+/* Comienzo estilos de Datatables    */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid #111;
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
+    background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
+    background: -moz-linear-gradient(top, #585858 0%, #111 100%);
+    background: -ms-linear-gradient(top, #585858 0%, #111 100%);
+    background: -o-linear-gradient(top, #585858 0%, #111 100%);
+    background: linear-gradient(to bottom, #585858 0%, #111 100%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #333 !important;
+    border: 1px solid transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #333 !important;
+    border: 1px solid #cacaca;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #dcdcdc));
+    background: -webkit-linear-gradient(top, white 0%, #dcdcdc 100%);
+    background: -moz-linear-gradient(top, white 0%, #dcdcdc 100%);
+    background: -ms-linear-gradient(top, white 0%, #dcdcdc 100%);
+    background: -o-linear-gradient(top, white 0%, #dcdcdc 100%);
+    background: linear-gradient(to bottom, white 0%, #dcdcdc 100%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid #111;
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
+    background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
+    background: -moz-linear-gradient(top, #585858 0%, #111 100%);
+    background: -ms-linear-gradient(top, #585858 0%, #111 100%);
+    background: -o-linear-gradient(top, #585858 0%, #111 100%);
+    background: linear-gradient(to bottom, #585858 0%, #111 100%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #333 !important;
+    border: 1px solid transparent;
+}
+
+.encabezado_mantenedor_global{
+
+
+}
+
+.estilo_input_encabezado_global{
+	height:50px;
+	width:150px;
+}
+
+.input {
+    font-size: 11px;
+    border-style: solid;
+    padding: 2px;
+    border-width: 1px;
+    border-radius: 8px;
+    height: 22px;
+    color: #464646;
+    text-align: center;
+	border: 1px solid #cfd9db;
+    background-color: #ffffff;
+}
+
+.icono_editar{
+	width:24px;
+	height:24px;
+	background-image: url("../images/editar.png");
+}
+
+.cab_horario{
+	text-align:center;
+	background-color:#585858;
+	color:#FFFFFF;
+}
+.fondo_formularios{
+	background-color:#e7f0f7;
+	box-shadow: 5px 5px #dddddd;
+	margin:auto;
+	width:60%;
+	padding:10px;
+	margin-top:10px;
+}
+.fondo_formularios table{
+	    width: 90%;
+}
+.fondo_formularios input {
+	width:70%;
+    height: 34px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    border-width: 1px;
+    background-color: #fff;
+    padding: 10px;
+	border-color:#dddddd;
+}
+
+.fondo_formularios textarea, .fondo_formularios .livespell_textarea {
+	width:97%;
+	border-radius: 5px;
+	margin-bottom: 4px;
+	border-width: 1px;
+	background-color: #fff;
+	padding: 10px;
+	border-color:#dddddd;
+}
+
+.fondo_formularios select{
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    border-width: 1px;
+    background-color: #fff;
+    padding: 10px;
+	border-color:#dddddd;
+}
+
+.fondo_formularios button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
