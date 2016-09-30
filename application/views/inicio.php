@@ -12,7 +12,7 @@
 <!--SCRIPTS-->
 <!-- SET GLOBAL BASE URL (https://codedump.io/share/vYcPimS5u6pl/1/codeigniter-base-url-didn39t-recongnized-in-javascript) -->
 <script>var base_url = '<?php echo base_url() ?>';</script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-2.1.1.js"></script>
 <!--Slider-in icons-->
 <script type="text/javascript">
 

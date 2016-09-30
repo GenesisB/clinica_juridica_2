@@ -1,6 +1,6 @@
 ﻿<?php
 	 if (!isset($_SESSION['login_user'])) {
-		 header("Location: /clinica_juridica");
+		 header("Location: ".base_url());
 	 }
 ?>
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <!-- SET GLOBAL BASE URL (https://codedump.io/share/vYcPimS5u6pl/1/codeigniter-base-url-didn39t-recongnized-in-javascript) -->
 <script>var base_url = '<?php echo base_url() ?>';</script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+<!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script> -->
 <script src="<?= base_url(); ?>assets/js/jquery-2.1.1.js"></script>
 <script src="<?= base_url(); ?>assets/js/jquery-ui-1.10.2.custom.js"></script>
 <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/css/jquery-ui-1.10.2.custom.css">
