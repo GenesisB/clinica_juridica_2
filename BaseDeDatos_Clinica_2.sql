@@ -388,9 +388,9 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`rut`, `dv`, `nombre`, `pwd`, `telefono`, `email`, `tipo_usuario`, `sede`) VALUES
-(17185872, '0', 'CRISTOBAL ALEGRIA', 'clave', '2972592', 'c.alegria@hrtech.cl', 'F', '2'),
-(17287534, '3', 'HERNAN SAAVEDRA', 'clave', NULL, 'her.saavedra@uandresbello.edu', 'F', '1'),
-(17791980, '2', 'GENESIS BUSTAMANTE', '123456', '988880855', 'genmarc@gmail.com', 'F', '1');
+(17185872, '0', 'CRISTOBAL ALEGRIA', '$2a$08$WfmfsrsHLHRcxnt2h8j8B.1Hw9eWRy5rlmTFF7xy0KU24VAe3.At2', '2972592', 'c.alegria@hrtech.cl', 'F', '2'),
+(17287534, '3', 'HERNAN SAAVEDRA', '$2a$08$WfmfsrsHLHRcxnt2h8j8B.1Hw9eWRy5rlmTFF7xy0KU24VAe3.At2', NULL, 'her.saavedra@uandresbello.edu', 'F', '1'),
+(17791980, '2', 'GENESIS BUSTAMANTE', '$2a$08$RsbHwJea/wgjQTbXy1pX0eLP.hwFG/SoTiEID5dy0Xqh2lXgXgCvC', '988880855', 'genmarc@gmail.com', 'F', '1');
 
 -- --------------------------------------------------------
 

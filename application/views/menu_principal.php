@@ -143,7 +143,7 @@ ajaxStop: function() { $body.removeClass("loading"); }
 								echo "<li><a href='#'>Mantenedor</a>";
 								echo "    <ul>";
 								echo "        <li><a href='#' onClick='form_mantenedor_1();'>Configuracion de Agenda</a></li>";
-								echo "		<li><a href='#' onClick='form_mantenedor_clientes();'>Usuarios</a></li>";
+								echo "		<li><a href='#' onClick='form_mantenedor_clientes();'>Clientes</a></li>";
 								echo "		<li><a href='#' onClick='form_mantenedor_admin();'>Administradores</a></li>";
 								echo "		<li><a href='#' onClick='form_mantenedor_profesores();'>Profesores</a></li>";
 								echo "		<li><a href='#' onClick='form_mantenedor_alumnos();'>Alumnos</a></li>	";

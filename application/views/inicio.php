@@ -60,8 +60,8 @@ $(document).ready(function() {
 
 	<!--CONTENT-->
     <div class="content">
-	<!--USERNAME--><input id="username" name="username" type="text" class="input username" value="Usuario" onfocus="this.value=''" /><!--END USERNAME-->
-    <!--PASSWORD--><input id="password" name="password" type="password" class="input password" value="Contraseña" onfocus="this.value=''" /><!--END PASSWORD-->
+	<!--USERNAME--><input id="username" name="username" type="text" class="input username" placeholder="Usuario" /><!--END USERNAME-->
+    <!--PASSWORD--><input id="password" name="password" type="password" class="input password" placeholder="Contraseña" /><!--END PASSWORD-->
     </div>
     <!--END CONTENT-->
 

@@ -18,14 +18,14 @@ class Menu extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	
+
 	public function index()
 	{
 		$this->load->view('inicio');
 	}
 	public function menu_principal()
 	{
-		$this->load->model('modelo_privilegios');	
+		$this->load->model('modelo_privilegios');
 		$var['privilegios'] = $this->modelo_privilegios->traer_privilegios();
 		$var['nombre'] = $this->modelo_privilegios->nombre_usuario();
 		$var['sede'] = $this->modelo_privilegios->sede_usuario();
@@ -33,7 +33,7 @@ class Menu extends CI_Controller {
 		$var['cantidad_sedes'] = $this->modelo_privilegios->cantidad_sedes();
 		$this->load->view('menu_principal',$var);
 	}
-	
+
 	public function cerrar_sesion()
 	{
 		$this->load->view('Logout');
@@ -44,18 +44,18 @@ class Menu extends CI_Controller {
 	}
 	public function login()
 	{
-		$usuario =  $this->input->post('username');	
-		$clave =  $this->input->post('password');	
+		$usuario =  $this->input->post('username');
+		$clave =  $this->input->post('password');
 		$this->load->model('modelo_privilegios');
 		$estado = $this->modelo_privilegios->login($usuario,$clave);
-		if($estado=="OK"){
+		if ($estado=="OK") {
 			echo "OK";
-		}else{
+		} else {
 			echo "NO";
 		}
-	}	
-	
-	
+	}
+
+
 
 
 }
